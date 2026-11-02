@@ -40,7 +40,7 @@ The original production project ID, database, keys, schedules and Git history ar
 
 ## Validation and limits
 
-The check script builds the Worker and runs artifact validation, MCP/content smoke, editing, queue, locale and translation tests. Provider responses in automated tests are fixtures, not proof of live provider compatibility. The demo has produced a real 16-part English translation through the configured Writer. CI is included but has not run on GitHub yet.
+The check script builds the Worker and runs artifact validation, MCP/content smoke, editing, queue, locale and translation tests. Provider responses in automated tests are fixtures, not proof of live provider compatibility. The demo has produced a real 16-part English translation through the configured Writer. [The first GitHub CI run passed](https://github.com/Bb-soil/the-living-handbook/actions/runs/41513088580) on Linux/Node.js 22: clean installation and the full check suite.
 
 Jev thresholds are provisional. The article is an editorial draft; its English version is AI-generated. Auto-publication is not implemented. A linked hourly cloud task is configured for the demo, but sustained unattended operation has not been independently established. External hosted MCP/OAuth connectivity and full D1 backup/restore remain verification tasks. Compact agent decision cards and the original automated source-selection pipeline are future work.
 

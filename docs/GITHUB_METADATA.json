@@ -15,5 +15,9 @@
   "has_wiki": false,
   "default_branch": "main",
   "initial_release": "v0.1.0",
-  "publication_status": "prepared_not_published"
+  "publication_status": "published",
+  "repository_url": "https://github.com/Bb-soil/the-living-handbook",
+  "first_ci_run": "https://github.com/Bb-soil/the-living-handbook/actions/runs/41513088580",
+  "first_ci_result": "success",
+  "release_status": "not_tagged"
 }

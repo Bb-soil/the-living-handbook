@@ -1,11 +1,11 @@
-# Publication handoff
+# GitHub publication
 
-This folder is the clean repository candidate for the actual Worker/D1 site and MCP, not the old article-only package and not the Next.js prototype. It was prepared without the source repository's Git history, project identity, secrets or runtime data.
+Published repository: https://github.com/Bb-soil/the-living-handbook
 
-Licenses are selected: MIT for application code, CC BY 4.0 for the article. Review LICENSE_SCOPE.md before uploading. Read README.md and verify the current validation results in docs/VALIDATION.md. GitHub CI is prepared but has not run remotely.
+Public demo: https://the-living-handbook.fit-hake-0747.chatgpt.site/
 
-Suggested repository name: the-living-handbook. Suggested description: A living article and MCP server for beginner vibe coders, with human-reviewed AI editing. Suggested topics: mcp, vibecoding, ai-agents, knowledge-base, cloudflare-workers.
+This repository contains the Worker/D1 application and MCP, plus the RU/EN article. Application code uses MIT; article content uses CC BY 4.0. See LICENSE_SCOPE.md. Production credentials, database, project identity, runtime files and original deployment history are excluded.
 
-A local main branch can be initialized and staged. No remote, GitHub repository or public release is created by preparation. Commit using your own configured Git identity, then create your desired GitHub repository and push only this candidate folder. Do not push the original .OpenCodeProjects working directory or copy its databases.
+The first GitHub Actions check passed: https://github.com/Bb-soil/the-living-handbook/actions/runs/41513088580. See docs/VALIDATION.md for its scope and remaining verification. No tagged release has been published.
 
-Public demo: https://the-living-handbook.fit-hake-0747.chatgpt.site/. This source does not include access to that deployment.
+For further development, clone this repository, create a branch and run npm ci followed by npm run check. Public commits do not automatically deploy the demo; deployment and its database remain separate. Do not upload the original local project's databases, environment files or private suggestions.

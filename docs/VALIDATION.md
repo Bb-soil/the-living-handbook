@@ -9,6 +9,6 @@ Performed in the clean repository candidate on Windows with Node.js 22.14.0:
 
 The full dependency installation reported four moderate findings in development tooling. No forced dependency upgrade was applied; review these separately before treating tooling as production infrastructure. Audit results are time-dependent, not a security guarantee.
 
-The included GitHub Actions workflow has not run remotely. Automated provider responses are fixtures; checks do not spend an API key's credits. The live demo's real translation and earlier browser checks are historical evidence for that deployment, not a new browser run of this exact repository candidate.
+[GitHub Actions run #1](https://github.com/Bb-soil/the-living-handbook/actions/runs/41513088580) passed on 2026-11-02 for commit c3cdf8291bfec147b38d949bc050b161ff6cb435, using Ubuntu and Node.js 22. Both npm ci and npm run check succeeded. Automated provider responses are fixtures; checks do not spend an API key's credits. The live demo's real translation and earlier browser checks are historical evidence for that deployment, not a new browser run of this exact repository candidate.
 
 Remaining verification: hosted external MCP/OAuth, repeated unattended schedule execution, D1 backup restoration, threshold calibration and independent English editorial review. See ROADMAP.md. The production Site and its database were not changed during repository preparation.
