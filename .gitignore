@@ -1,0 +1,15 @@
+node_modules/
+dist/
+.sites-runtime/
+worker/pages.js
+.env
+.env.*
+!.env.example
+*.log
+*.sqlite*
+*.db
+*.db-*
+*.tar.gz
+*.zip
+.DS_Store
+Thumbs.db

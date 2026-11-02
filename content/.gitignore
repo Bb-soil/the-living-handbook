@@ -1,0 +1,9 @@
+# Generated or private local files
+.DS_Store
+Thumbs.db
+*.log
+.env
+.env.*
+*.sqlite*
+*.db*
+node_modules/

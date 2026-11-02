@@ -1,0 +1,31 @@
+{
+  "project": "The Living Handbook",
+  "exported_at": "2026-11-02T14:22:51.306Z",
+  "source_url": "https://the-living-handbook.fit-hake-0747.chatgpt.site",
+  "source_revision": 1,
+  "source_hash": "62ac6dc2da2307898b01efa2ff72e0fa4d44d31e87f2e08ebb517758299b7e02",
+  "translation_hash": "db22fc2581e864e8f33004c88c80a8963269d5fc74f566f33049c4de242f1295",
+  "editorial_status": "draft_for_author_review",
+  "license": "CC-BY-4.0",
+  "languages": [
+    "ru",
+    "en"
+  ],
+  "sections": 15,
+  "sources": 55,
+  "files": {
+    ".gitignore": "20b5cbb6c3659916950e06e5925f4461cab1010fdc4e3922ee36226653ecb321",
+    "ARTICLE.en.md": "3307081930b4f1c4da4a604f15b587525d361ff2adfb5299de8f1809959e8dad",
+    "ARTICLE.ru.md": "1588617aaa660e0057529bc2694b6df1af81e84566e1bb9ad481d559e89f7be0",
+    "ATTRIBUTION.md": "ef27b9be5e63063d33d8dfa1c62b68d053da798afd31d8976ac799ed0629009a",
+    "CONTRIBUTING.md": "73ee54ac0c5d48b3b7577eea365a05d93e74ebfad24fb7447b47077aa320c600",
+    "EDITORIAL_NOTES.en.md": "6a9857c38285c8e4d45b10f2645cba238a486ef041de142511376ebed33323de",
+    "EDITORIAL_NOTES.md": "fc71852b6afe3b813749cf1049cdb3e571d123349b216425c23940b900b0c171",
+    "LICENSE": "9ba9550ad48438d0836ddab3da480b3b69ffa0aac7b7878b5a0039e7ab429411",
+    "PUBLICATION.md": "cc48448c9b9bca6fa78e8e18108fac28f2e2a840b9dccc8a38c6e75925f16450",
+    "README.md": "03e87156dd5b223754570aa70b28334b3b4fdbacb026ee9c191d1bd3795bf462",
+    "SOURCES.md": "0968b3778084539a5048b875dd4dfc547c16d72f4f05527cb54c4a5f0f0e8447",
+    "article.en.json": "c020cbb45898704b37e0edce77637a8ac0a5e66b0633b473a65621a92656652b",
+    "article.ru.json": "9a4635f2f45b4d4bd012bb2892b9a89a37192c57430cea23c92c15809314b783"
+  }
+}

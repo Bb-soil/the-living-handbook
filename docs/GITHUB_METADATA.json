@@ -1,0 +1,19 @@
+{
+  "name": "the-living-handbook",
+  "visibility": "public",
+  "description": "A living article and MCP server for beginner vibe coders, with human-reviewed AI editing.",
+  "homepage": "https://the-living-handbook.fit-hake-0747.chatgpt.site/",
+  "topics": [
+    "mcp",
+    "vibecoding",
+    "ai-agents",
+    "knowledge-base",
+    "cloudflare-workers",
+    "human-in-the-loop"
+  ],
+  "has_issues": true,
+  "has_wiki": false,
+  "default_branch": "main",
+  "initial_release": "v0.1.0",
+  "publication_status": "prepared_not_published"
+}

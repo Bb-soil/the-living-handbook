@@ -1,0 +1,16 @@
+import assert from 'node:assert/strict';
+import {resolveLocale,translate} from '../i18n/locale.js';
+assert.equal(resolveLocale('auto',['ru-RU','en-US']),'ru');
+assert.equal(resolveLocale('auto',['en-GB','ru-RU']),'en');
+assert.equal(resolveLocale('auto',['de-DE','ru-RU']),'ru');
+assert.equal(resolveLocale('auto',['ja-JP']),'en');
+assert.equal(resolveLocale(null,[]),'en');
+assert.equal(resolveLocale('ru',['en-US']),'ru');
+assert.equal(resolveLocale('en',['ru-RU']),'en');
+assert.equal(resolveLocale('invalid',['RU_ru']),'ru');
+assert.equal(translate('Общий API-ключ OpenRouter','en'),'Shared OpenRouter API key');
+assert.equal(translate(' Отправить предложение ','en'),' Submit suggestion ');
+assert.equal(translate('Отправить предложение','ru'),'Отправить предложение');
+const authored='Произвольный текст автора с неизвестным содержанием';assert.equal(translate(authored,'en'),authored);
+assert.equal(translate('Допущено за последний час: 4/4 · ожидают допуска: 12 · проверка каждый час, круглосуточно','en'),'Admitted in the past hour: 4/4 · waiting: 12 · hourly processing, 24/7');
+console.log('PASS locale negotiation, override, fallback, regional tags, dynamic queue labels and preservation of unknown content.');

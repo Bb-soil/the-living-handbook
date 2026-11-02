@@ -1,0 +1,39 @@
+{
+  "name": "the-living-handbook",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "validate": "node scripts/validate-artifact.mjs",
+    "preview": "node scripts/preview.mjs",
+    "test": "node scripts/smoke.mjs",
+    "db:generate": "drizzle-kit generate",
+    "test:editing": "node scripts/editing-test.mjs",
+    "test:queue": "node scripts/queue-test.mjs",
+    "test:locale": "node scripts/locale-test.mjs",
+    "test:translation": "node scripts/translation-test.mjs",
+    "check": "npm run build && npm run validate && npm test && npm run test:editing && npm run test:queue && npm run test:locale && npm run test:translation"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "1.32.2",
+    "remark-parse": "11.0.0",
+    "unified": "11.0.5",
+    "zod": "4.6.7"
+  },
+  "devDependencies": {
+    "drizzle-kit": "0.31.10",
+    "drizzle-orm": "0.45.2",
+    "esbuild": "0.28.2",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "react-markdown": "10.1.0",
+    "rehype-sanitize": "6.0.0",
+    "remark-gfm": "4.0.1"
+  },
+  "version": "0.1.0",
+  "description": "A living article, MCP server and human-reviewed AI editing workflow for beginner vibe coders.",
+  "engines": {
+    "node": ">=22.14.0"
+  },
+  "license": "MIT"
+}
