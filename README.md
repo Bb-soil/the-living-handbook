@@ -34,7 +34,7 @@ Open http://127.0.0.1:3891/ and /admin. Preview uses a real local SQLite adapter
 
 ## Hosting and MCP
 
-The live application runs as a Worker with D1 through **Sites**. Hosted identity headers, ChatGPT sign-in and the linked cloud schedule are platform integrations, not a self-contained OAuth implementation. See [deployment](docs/DEPLOYMENT.md), [MCP](docs/MCP.md) and [architecture](docs/ARCHITECTURE.md). The demo's /mcp endpoint may require separate Sites/OAuth authorization even though the article is public.
+The live application runs as a Worker with D1 through **Sites**. Hosted identity headers, ChatGPT sign-in and the linked cloud schedule are platform integrations, not a self-contained OAuth implementation. See [deployment](docs/DEPLOYMENT.md), [MCP](docs/MCP.md) and [architecture](docs/ARCHITECTURE.md). External clients use the public read-only endpoint https://the-living-handbook.fit-hake-0747.chatgpt.site/public-mcp without sign-in or keys. The reserved /mcp route retains the separate Sites OAuth integration.
 
 The original production project ID, database, keys, schedules and Git history are not included. Register your own Sites project and secrets. For another host, replace the identity and scheduler adapters first.
 
@@ -42,7 +42,7 @@ The original production project ID, database, keys, schedules and Git history ar
 
 The check script builds the Worker and runs artifact validation, MCP/content smoke, editing, queue, locale and translation tests. Provider responses in automated tests are fixtures, not proof of live provider compatibility. The demo has produced a real 16-part English translation through the configured Writer. [The first GitHub CI run passed](https://github.com/Bb-soil/the-living-handbook/actions/runs/41513088580) on Linux/Node.js 22: clean installation and the full check suite.
 
-Jev thresholds are provisional. The article is an editorial draft; its English version is AI-generated. Auto-publication is not implemented. A linked hourly cloud task is configured for the demo, but sustained unattended operation has not been independently established. External hosted MCP/OAuth connectivity and full D1 backup/restore remain verification tasks. Compact agent decision cards and the original automated source-selection pipeline are future work.
+Jev thresholds are provisional. The article is an editorial draft; its English version is AI-generated. Auto-publication is not implemented. A linked hourly cloud task is configured for the demo, but sustained unattended operation has not been independently established. Public hosted MCP is verified with the official SDK and an OpenCode native connection; model-mediated OpenCode calls, the separate Sites OAuth flow and full D1 backup/restore remain unverified. Compact agent decision cards and the original automated source-selection pipeline are future work.
 
 ## Contribute and license
 

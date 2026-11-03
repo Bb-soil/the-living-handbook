@@ -12,3 +12,5 @@ This is the Sites Worker/D1 implementation. The production project ID and creden
 The snapshot is a seed, not a live sync. Do not overwrite current D1 with JSON on each deploy. New translations use the instance's provider key and daily budget. Backups and restore verification are the operator's responsibility and remain unverified for the demo.
 
 Outside Sites, replace trusted identity/header handling, sign-in routes and scheduling before public exposure. Simply deploying this Worker behind arbitrary user-supplied identity headers is unsafe. The preview adapter injects a local test owner and is never a deployment target.
+
+After deployment, verify anonymous access to /public-mcp using the remote SDK check in docs/MCP.md. The reserved /mcp route follows Sites OAuth policy and is not the external anonymous endpoint. Preserve author identity checks on all write APIs.

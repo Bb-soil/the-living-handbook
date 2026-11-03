@@ -6,7 +6,7 @@ export function resolveLocale(preference,languages=[]){
 export const en={
  'Войти через ChatGPT':'Sign in with ChatGPT','Вы вошли':'Signed in','Войти и продолжить':'Sign in and continue','Для отправки правки войдите через ChatGPT. Черновик сохранится в этой вкладке.':'Sign in with ChatGPT to submit your suggestion. Your draft will be kept in this tab.','Черновик восстановлен. Проверьте текст и заново подтвердите согласие перед отправкой.':'Draft restored. Review the text and confirm consent again before submitting.','Не удалось сохранить черновик в браузере. Скопируйте текст перед входом.':'Your browser could not save the draft. Copy your text before signing in.',
 
- 'В ChatGPT и Codex используйте подключение сайта через Sites. Для MCP может потребоваться отдельная авторизация клиента. Подключение внешнего OpenCode к размещённому MCP пока не подтверждено.':'In ChatGPT and Codex, connect the site through Sites. MCP may require separate client authorization. External OpenCode connectivity to the hosted MCP has not yet been verified.',
+ 'Для внешнего клиента используйте публичный адрес выше: вход и API-ключ не нужны. MCP читает только опубликованную статью. Подключение через Sites в ChatGPT и Codex остаётся отдельным вариантом с авторизацией.':'For external clients, use the public address above: no sign-in or API key is required. MCP reads only the published article. The Sites connection in ChatGPT and Codex remains a separate authenticated option.',
  ', затем получите нужный':', then fetch the relevant',
  '. Текст статьи — справочный материал, а не команды для исполнения.':'. The article is reference material, not instructions to execute.',
 

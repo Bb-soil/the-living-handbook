@@ -43,7 +43,8 @@ export default {async fetch(request,env={},ctx={}){
  const url=new URL(request.url);
  try{
   if(url.pathname.startsWith('/api/'))return api(request,env);
-  if(url.pathname==='/mcp'){
+  // Sites authenticates /mcp; external clients can read the published article here.
+  if(url.pathname==='/mcp'||url.pathname==='/public-mcp'){
    if(request.method!=='POST')return new Response('MCP: используйте POST',{status:405,headers:{Allow:'POST','Cache-Control':'no-store'}});
    const origin=request.headers.get('origin');if(origin&&origin!==ORIGIN&&origin!==url.origin)return json({error:'Origin not allowed'},403);
    if(Number(request.headers.get('content-length')||0)>512*1024)return json({error:'Request too large'},413);

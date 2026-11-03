@@ -12,7 +12,8 @@
     "test:queue": "node scripts/queue-test.mjs",
     "test:locale": "node scripts/locale-test.mjs",
     "test:translation": "node scripts/translation-test.mjs",
-    "check": "npm run build && npm run validate && npm test && npm run test:editing && npm run test:queue && npm run test:locale && npm run test:translation"
+    "check": "npm run build && npm run validate && npm test && npm run test:editing && npm run test:queue && npm run test:locale && npm run test:translation && npm run test:public-mcp",
+    "test:public-mcp": "node scripts/public-mcp-test.mjs"
   },
   "dependencies": {
     "@modelcontextprotocol/sdk": "1.32.2",

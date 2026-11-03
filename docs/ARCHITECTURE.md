@@ -9,3 +9,5 @@ RU is the editorial source. EN is assembled only when all parts match one source
 Requests advance processing; a linked Sites cloud task calls the protected queue endpoint hourly while the site is closed. This repository does not install or claim a native Cron Trigger. Provider calls are capped and recorded. Nothing auto-publishes.
 
 The local SQLite D1 adapter is test infrastructure. Sites dispatch supplies trusted identity; an untrusted external client must not be allowed to supply those headers directly on another host.
+
+/public-mcp is the anonymous read-only transport for external clients; /mcp remains the Sites-authenticated transport. Both construct the same two tools over currentSnapshot. The anonymous route cannot dispatch admin or queue operations. Publication consistency is tested on a real SQLite database without changing production content.
